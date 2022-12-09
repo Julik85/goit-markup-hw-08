@@ -1,0 +1,122 @@
+.section-filter {
+       padding: 94px 0;
+  }
+
+  .container-filter {
+      text-align: center;   
+    margin-bottom: 50px;
+  }
+
+  .filter {
+    display: flex;
+    gap: 8px;  
+    justify-content: center;   
+  }
+  
+  .filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    color: var(--title-color);
+    padding: 6px 22px;
+    transition: color 250ms var(--time-duration),
+    background-color 250ms var(--time-duration),
+    box-shadow 250ms var(--time-duration);
+    &:hover,
+    &:focus {
+    background-color: var(--focus-color);
+    color: var(--filter-battons-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  } 
+
+  .examples {
+    display: flex;    
+    flex-wrap: wrap;    
+  }
+  
+  .wrapper {
+    padding: 20px 24px;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+  
+  .examples-item {
+    flex-basis: calc((100% - 60px) / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+      
+  }
+        
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .examples-link {
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    box-shadow: none;
+    display: block;
+    transition: box-shadow 250ms var(--time-duration);
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  .examples-link-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .examples-link-owerlay {
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;  
+    transform: translateY(100%);
+    transition: transform 250ms var(--time-duration);
+    .examples-link:hover & {
+      transform: translateY(0);
+    }
+  }
+
+  .owerlay-text {
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--hero-color);
+    text-align: center;
+    padding: 63px 24px;
+    overflow: auto;
+  }  
+  
+  .examples-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--title-color);    
+  }
+  
+  .examples-type {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 4px;
+  }
