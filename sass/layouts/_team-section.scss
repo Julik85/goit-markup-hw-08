@@ -6,11 +6,13 @@
   
   .team {
     display: flex;
-    gap: 30px;    
+    gap: 30px;   
+    flex-wrap: wrap; 
   }
   
   .team-item {
-    width: calc((100% - 90px) / 4);
+    // width: calc((100% - 90px) / 4);
+    width: 100%;
     background-color: var(--body-background-color);
     
   }

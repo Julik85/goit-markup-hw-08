@@ -1,6 +1,10 @@
 .section-work {
     text-align: center;
     padding-bottom: 94px;
+    display: none;
+    @include desktop {
+      display: block;
+    }
   }
   
   .section-title {

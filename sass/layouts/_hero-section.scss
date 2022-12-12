@@ -1,36 +1,74 @@
 .hero {  
     text-align: center;
     background-repeat: no-repeat; 
-  }
+}
   
-  .hero__bg {
-    max-width: 1600px;
-    height: 600px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../image/hero-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    flex-grow: 1;
+.hero__bg {
+  max-width: 1600px;
+  height: 400px;
+  background-image:var(--grad),
+    url(../../image/Header-mob.jpg),
+    url(../../image/Header-mob.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-grow: 1;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin: 0 auto;
+  background-size: cover;
+  @include retina {
+    background-image:var(--grad),
+      url(../../image/Header-mob@2x.jpg),
+      url(../../image/Header-mob@2x.webp);
+  }
+  @include mobile {
+    background-image:var(--grad),
+    url(../../image/hero-tablet.jpg),
+    url(../../image/hero-tablet.webp);
+    @include retina {
+      background-image:var(--grad),
+      url(../../image/hero-tablet@2x.jpg),
+      url(../../image/hero-tablet@2x.webp);
+        }
+  
+  }
+
+  @include tablet {
+    background-image:var(--grad),
+    url(../../image/hero-desk.jpg),
+    url(../../image/hero-desk.webp);
+    @include retina {
+      background-image:var(--grad),
+      url(../../image/hero-deck@2x.jpg),
+      url(../../image/hero-deck@2x.webp);
+        }
+  }
+  @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
-    margin: 0 auto;
-    background-size: cover;
+    height: 600px;
+   
   }
+}
+
+
   
   .hero-title {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-color);
     margin-left: auto;
     margin-right: auto;
     max-width: 696px;
+
+    @include desktop {
+      font-size: 44px;
+    line-height: calc(60 / 44);
+    }
   }
   .hero__btn {
     font-family: inherit;
@@ -43,7 +81,7 @@
     color: var(--filter-battons-color);
     border-radius: 4px;
     border: none;
-    min-width: 216px;
+    min-width: 200px;    
     height: 50px;
     padding: 0;
   }
