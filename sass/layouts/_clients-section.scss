@@ -1,46 +1,87 @@
 .section-clients {
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .clients {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-  }
-  
-  .clients-item {
-    width: 170px;
-    height: 92px;
-  }
-  
-  .clients-link {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: var(--body-background-color);
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4px;
-    transition: border 250ms var(--time-duration);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    &:hover,
-    &:focus {
-      background-color: var(--body-background-color);
-      border: 1px solid var(--focus-color);
+    @include desktop {
+      padding-top: 94px;
+      padding-bottom: 94px;
     }
-  }
-  
-  .clients-icon {
-    fill: rgba(175, 177, 184, 1);
-    transition: fill 250ms var(--time-duration);
+}
 
-    .clients-link:hover &,
-  .clients-link:focus & {
-    fill: var(--focus-color);
+.section-clients-container {
+  max-width: 480px;
+
+  @include tablet {
+    max-width: 768px;
   }
+
+  @include desktop {
+    max-width: 1200px;
+  }
+}
+
+.section-clients-title{
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   
-  } 
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+}
+
+.clients {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+  
+.clients-item {
+  
+  height: 92px;
+  width: calc((100% - 30px) / 2);
+
+  @include tablet {
+    width: calc((100% - 60px) / 3)
+  }
+
+  @include desktop {
+    width: 170px;
+  }
+
+}
+  
+.clients-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-background-color);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  transition: border 250ms var(--time-duration);
+
+  &:hover,
+  &:focus {
+    background-color: var(--body-background-color);
+    border: 1px solid var(--focus-color);
+  }
+}
+
+.clients-icon {
+  fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms var(--time-duration);
+
+  .clients-link:hover &,
+.clients-link:focus & {
+  fill: var(--focus-color);
+}
+
+} 
     
