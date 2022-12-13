@@ -441,7 +441,7 @@ address {
 .hero__bg {
   max-width: 1600px;
   height: 400px;
-  background-image: var(--grad), url(../../image/Header-mob.jpg), url(../../image/Header-mob.webp);
+  background-image: var(--grad), url(../image/Header-mob.jpg), url(../image/Header-mob.webp);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-box-flex: 1;
@@ -454,27 +454,27 @@ address {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__bg {
-    background-image: var(--grad), url(../../image/Header-mob@2x.jpg), url(../../image/Header-mob@2x.webp);
+    background-image: var(--grad), url(../image/Header-mob@2x.jpg), url(../image/Header-mob@2x.webp);
   }
 }
 @media screen and (min-width: 480px) {
   .hero__bg {
-    background-image: var(--grad), url(../../image/hero-tablet.jpg), url(../../image/hero-tablet.webp);
+    background-image: var(--grad), url(../image/hero-tablet.jpg), url(../image/hero-tablet.webp);
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero__bg {
-    background-image: var(--grad), url(../../image/hero-tablet@2x.jpg), url(../../image/hero-tablet@2x.webp);
+    background-image: var(--grad), url(../image/hero-tablet@2x.jpg), url(../image/hero-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
   .hero__bg {
-    background-image: var(--grad), url(../../image/hero-desk.jpg), url(../../image/hero-desk.webp);
+    background-image: var(--grad), url(../image/hero-desk.jpg), url(../image/hero-desk.webp);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__bg {
-    background-image: var(--grad), url(../../image/hero-deck@2x.jpg), url(../../image/hero-deck@2x.webp);
+    background-image: var(--grad), url(../image/hero-deck@2x.jpg), url(../image/hero-deck@2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
