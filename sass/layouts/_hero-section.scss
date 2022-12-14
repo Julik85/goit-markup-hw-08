@@ -61,11 +61,12 @@
   color: var(--hero-color);
   margin-left: auto;
   margin-right: auto;
-  max-width: 696px;
+  max-width: 360px;
 
   @include desktop {
     font-size: 44px;
   line-height: calc(60 / 44);
+  max-width: 696px;
   }
 }
 

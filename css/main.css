@@ -385,10 +385,15 @@ address {
 
 .phone {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .phone {
+    font-size: 34px;
+  }
 }
 @media screen and (min-width: 768px) {
   .phone {
@@ -425,6 +430,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -495,12 +502,13 @@ address {
   color: var(--hero-color);
   margin-left: auto;
   margin-right: auto;
-  max-width: 696px;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
     font-size: 44px;
     line-height: 1.3636363636;
+    max-width: 696px;
   }
 }
 
@@ -692,8 +700,15 @@ address {
 
 .section-team {
   text-align: center;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .section-team-title {
@@ -729,7 +744,6 @@ address {
 }
 
 .team-item-container {
-  padding: 60px 15px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -968,7 +982,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .footer-container-list {
-    margin-right: 70px;
     width: inherit;
   }
 }
@@ -1049,7 +1062,7 @@ address {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
-    margin-right: 89px;
+    margin-right: auto;
   }
 }
 
@@ -1337,17 +1350,11 @@ address {
 
 .modal-title {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 1.0714285714;
+  font-size: 20px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--link-color);
   text-align: center;
-}
-@media screen and (min-width: 1200px) {
-  .modal-title {
-    font-size: 20px;
-    line-height: 1.15;
-  }
 }
 
 .modal-form {
